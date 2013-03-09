@@ -9,11 +9,17 @@
 		App.reservations
 	
 	App.addRegions
-		newReservationRegion: 	"#new-reservation-region"
-		listReservationsRegion: "#list-reservations-region"
+		newReservationRegion: 					"#new-reservation-region"
+		listReservationsRegion: 				"#list-reservations-region"
+		confirmationReservationsRegion: "#confirmed-reservations-region"
 		
 	App.addInitializer ->
-		App.module("ReservationsApp").start()
+		@reservations.on "reset", (collection) ->
+			pending 	= App.request "pending:reservations", collection
+			confirmed = App.request "confirmed:reservations", collection
+			
+			App.module("ReservationsApp").start pending
+			App.module("ConfirmationsApp").start confirmed
 	
 	App.on "initialize:after", (options) ->
 		if Backbone.history
