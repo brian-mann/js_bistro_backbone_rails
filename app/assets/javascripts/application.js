@@ -11,5 +11,13 @@
 // GO AFTER THE REQUIRES BELOW.
 //
 //= require jquery
-//= require jquery_ujs
-//= require_tree .
+//= require lib/underscore
+//= require lib/backbone
+//= require lib/marionette
+//= require jquery.ui.effect-highlight
+//= require jquery.ui.datepicker
+//= require jquery.ui.dialog
+//= require jquery.ui.sortable
+//= require js-routes
+//= require twitter/bootstrap/modal
+//= require backbone/app

@@ -1,0 +1,168 @@
+<div class="container">
+	<div class="row">
+		<header class="twelve columns">
+			js bistro
+		</header>
+	</div>	
+	<div class="row">
+		 <div class="six columns centered">
+		 	<div class="form-wrapper">
+				<h3>Enter a Reservation</h3>
+				<form>
+					<input type="text" name="name" placeholder="Name" />
+					<input type="tel" name="phone" placeholder="Phone Number" />
+					<input type="text" name="number" placeholder="Number in Party" />
+					<button type="submit" class="button radius medium eight columns offset-by-four">Add Reservation</button>
+				</form>
+			</div>	
+		</div>	
+
+<!-- 	############## Pending Reservations ##############  -->
+		<div id="pending-reservations" class="row">
+			<h2>Pending Reservations</h2>	
+			<div class="four columns">
+				<div class="pending-slot">
+					<div class="number-in-party">8</div>
+					<div class="contact">
+						<div class="name-in-party">Bruce Wayne</div>
+						<div class="phone-number">678-555-9081</div>
+					</div>
+				</div>	
+			</div>
+			<div class="four columns">
+				<div class="pending-slot selected"> <!-- Class "selected" indicates selected state -->
+					<div class="number-in-party">2</div>
+					<div class="contact">
+						<div class="name-in-party">Selina Kyle</div>
+						<div class="phone-number">706-555-4891</div>
+					</div>
+				</div>
+			</div>
+			<div class="four columns">
+				<div class="pending-slot">
+					<div class="number-in-party">4</div>
+					<div class="contact">
+						<div class="name-in-party">Matt Hagen</div>
+						<div class="phone-number">678-555-5001</div>
+					</div>
+				</div>
+			</div>
+			<div class="four columns">
+				<div class="pending-slot">
+					<div class="number-in-party">1</div>
+					<div class="contact">
+						<div class="name-in-party">Temple Fugate</div>
+						<div class="phone-number">404-555-6153</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+<!-- 	############## Confirmed Reservations ##############  -->		
+		<div id="confirmed-reservations" class="row">
+			<h2>Confirmed Reservations</h2>
+			<div class="four columns">
+				<div class="confirmed-slot">	
+					<div class="available-percentage" style="width: 16%;"></div>
+					<div class="time-slot">12:00pm</div>
+					<a href="#" class="list-reservations">Reservations</a> <!-- Anchor class "list-reservations" opens dialog with reservations listed (*Extra Credit*) -->
+					<div class="available-number">42 Available</div>
+				</div>
+			</div>
+			<div class="four columns">
+				<div class="confirmed-slot">
+					<div class="available-percentage" style="width: 0%;"></div>
+					<div class="time-slot">1:00pm</div>
+<!--					<a href="#" class="list-reservations">Reservations</a>  Hide anchor class "list-reservations" on a slot with no reservations -->
+					<div class="available-number">50 Available</div>
+				</div>
+			</div>
+			<div class="four columns">
+				<div class="confirmed-slot selected">
+					<div class="available-percentage" style="width: 10%;"></div>
+					<div class="time-slot">2:00pm</div>
+					<a href="#" class="list-reservations">Reservations</a>
+					<div class="available-number">45 Available</div>
+				</div>
+			</div>
+			<div class="four columns">
+				<div class="confirmed-slot disabled"> <!-- Class "disabled" indicates disabled state -->
+					<div class="available-percentage" style="width: 100%;"></div>
+					<div class="time-slot">3:00pm</div>
+					<a href="#" class="list-reservations">Reservations</a>
+					<div class="available-number">full</div> <!-- Slots that are full should display text "full" -->
+				</div>
+			</div>
+			<div class="four columns">
+				<div class="confirmed-slot">
+					<div class="available-percentage" style="width: 40%;"></div>
+					<div class="time-slot">4:00pm</div>
+					<a href="#" class="list-reservations">Reservations</a>
+					<div class="available-number">30 Available</div>
+				</div>
+			</div>
+			<div class="four columns">
+				<div class="confirmed-slot">
+					<div class="available-percentage" style="width: 48%;"></div>
+					<div class="time-slot">5:00pm</div>
+					<a href="#" class="list-reservations">Reservations</a>
+					<div class="available-number">26 Available</div>
+				</div>
+			</div>
+			<div class="four columns">
+				<div class="confirmed-slot">
+					<div class="available-percentage" style="width: 48%;"></div>
+					<div class="time-slot">6:00pm</div>
+					<a href="#" class="list-reservations">Reservations</a>
+					<div class="available-number">26 Available</div>
+				</div>
+			</div>
+			<div class="four columns">
+				<div class="confirmed-slot">
+					<div class="available-percentage" style="width: 70%;"></div>
+					<div class="time-slot">7:00pm</div>
+					<a href="#" class="list-reservations">Reservations</a>
+					<div class="available-number">15 Available</div>
+				</div>
+			</div>
+			<div class="four columns">
+				<div class="confirmed-slot disabled">
+					<div class="available-percentage" style="width: 100%;"></div>
+					<div class="time-slot">8:00pm</div>
+					<a href="#" class="list-reservations">Reservations</a>
+					<div class="available-number">full</div>
+				</div>
+			</div>
+			<div class="four columns">
+				<div class="confirmed-slot disabled">
+					<div class="available-percentage" style="width: 100%;"></div>
+					<div class="time-slot">9:00pm</div>
+					<a href="#" class="list-reservations">Reservations</a>
+					<div class="available-number">full</div>
+				</div>
+			</div>
+			<div class="four columns">
+				<div class="confirmed-slot disabled">
+					<div class="available-percentage" style="width: 100%;"></div>
+					<div class="time-slot">10:00pm</div>
+					<a href="#" class="list-reservations">Reservations</a>
+					<div class="available-number">full</div>
+				</div>
+			</div>
+			<div class="four columns">
+				<div class="confirmed-slot disabled">
+					<div class="available-percentage" style="width: 100%;"></div>
+					<div class="time-slot">11:00pm</div>
+					<a href="#" class="list-reservations">Reservations</a>
+					<div class="available-number">full</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+</div>
+
+<footer>
+	<div class="container">
+		JS Framework Shootout 2013
+	</div>
+</footer>
