@@ -14,6 +14,7 @@
 //= require lib/underscore
 //= require lib/backbone
 //= require lib/marionette
+//= require lib/syphon
 //= require jquery.ui.effect-highlight
 //= require jquery.ui.datepicker
 //= require jquery.ui.dialog
