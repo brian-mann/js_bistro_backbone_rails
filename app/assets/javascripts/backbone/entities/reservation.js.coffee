@@ -1,6 +1,7 @@
 @Bistro.module "Entities", (Entities, App, Backbone, Marionette, $, _) ->
 	
 	class Entities.Reservation extends Entities.Model
+		url: -> Routes.reservations_path()
 
 	class Entities.ReservationsCollection extends Entities.Model
 		model: Entities.Reservation
