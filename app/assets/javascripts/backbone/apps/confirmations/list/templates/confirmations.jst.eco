@@ -1,0 +1,4 @@
+<div id="confirmed-reservations" class="row">
+	<h2>Confirmed Reservations</h2>
+	<div id="confirmed-reservations-list"></div>
+</div>

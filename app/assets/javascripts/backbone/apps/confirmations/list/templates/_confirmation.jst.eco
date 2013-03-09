@@ -1,0 +1,96 @@
+<div class="four columns confirmation-item">
+	<div class="confirmed-slot">	
+		<div class="available-percentage" style="width: <%= @width %>%;"></div>
+		<div class="time-slot"><%= @time %>:00pm</div>
+		<a href="#" class="list-reservations">Reservations</a> <!-- Anchor class "list-reservations" opens dialog with reservations listed (*Extra Credit*) -->
+		<div class="available-number"><%= @available %> Available</div>
+	</div>
+</div>
+<!-- <div class="four columns">
+	<div class="confirmed-slot">
+		<div class="available-percentage" style="width: 0%;"></div>
+		<div class="time-slot">1:00pm</div>
+		<a href="#" class="list-reservations">Reservations</a>  Hide anchor class "list-reservations" on a slot with no reservations
+		<div class="available-number">50 Available</div>
+	</div>
+</div>
+<div class="four columns">
+	<div class="confirmed-slot selected">
+		<div class="available-percentage" style="width: 10%;"></div>
+		<div class="time-slot">2:00pm</div>
+		<a href="#" class="list-reservations">Reservations</a>
+		<div class="available-number">45 Available</div>
+	</div>
+</div>
+<div class="four columns">
+	<div class="confirmed-slot disabled"> Class "disabled" indicates disabled state
+		<div class="available-percentage" style="width: 100%;"></div>
+		<div class="time-slot">3:00pm</div>
+		<a href="#" class="list-reservations">Reservations</a>
+		<div class="available-number">full</div> Slots that are full should display text "full"
+	</div>
+</div>
+<div class="four columns">
+	<div class="confirmed-slot">
+		<div class="available-percentage" style="width: 40%;"></div>
+		<div class="time-slot">4:00pm</div>
+		<a href="#" class="list-reservations">Reservations</a>
+		<div class="available-number">30 Available</div>
+	</div>
+</div>
+<div class="four columns">
+	<div class="confirmed-slot">
+		<div class="available-percentage" style="width: 48%;"></div>
+		<div class="time-slot">5:00pm</div>
+		<a href="#" class="list-reservations">Reservations</a>
+		<div class="available-number">26 Available</div>
+	</div>
+</div>
+<div class="four columns">
+	<div class="confirmed-slot">
+		<div class="available-percentage" style="width: 48%;"></div>
+		<div class="time-slot">6:00pm</div>
+		<a href="#" class="list-reservations">Reservations</a>
+		<div class="available-number">26 Available</div>
+	</div>
+</div>
+<div class="four columns">
+	<div class="confirmed-slot">
+		<div class="available-percentage" style="width: 70%;"></div>
+		<div class="time-slot">7:00pm</div>
+		<a href="#" class="list-reservations">Reservations</a>
+		<div class="available-number">15 Available</div>
+	</div>
+</div>
+<div class="four columns">
+	<div class="confirmed-slot disabled">
+		<div class="available-percentage" style="width: 100%;"></div>
+		<div class="time-slot">8:00pm</div>
+		<a href="#" class="list-reservations">Reservations</a>
+		<div class="available-number">full</div>
+	</div>
+</div>
+<div class="four columns">
+	<div class="confirmed-slot disabled">
+		<div class="available-percentage" style="width: 100%;"></div>
+		<div class="time-slot">9:00pm</div>
+		<a href="#" class="list-reservations">Reservations</a>
+		<div class="available-number">full</div>
+	</div>
+</div>
+<div class="four columns">
+	<div class="confirmed-slot disabled">
+		<div class="available-percentage" style="width: 100%;"></div>
+		<div class="time-slot">10:00pm</div>
+		<a href="#" class="list-reservations">Reservations</a>
+		<div class="available-number">full</div>
+	</div>
+</div>
+<div class="four columns">
+	<div class="confirmed-slot disabled">
+		<div class="available-percentage" style="width: 100%;"></div>
+		<div class="time-slot">11:00pm</div>
+		<a href="#" class="list-reservations">Reservations</a>
+		<div class="available-number">full</div>
+	</div>
+</div> -->
