@@ -1,3 +1,3 @@
-collection @reservations
+object @reservation
 
 extends "reservations/_base"
