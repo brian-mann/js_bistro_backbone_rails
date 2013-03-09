@@ -6,6 +6,8 @@
 	class Entities.ReservationsCollection extends Entities.Collection
 		model: Entities.Reservation
 		url: -> Routes.reservations_path()
+		comparator: (model) ->
+			-model.get "created_at_int"
 	
 	API =
 		getReservations: ->
