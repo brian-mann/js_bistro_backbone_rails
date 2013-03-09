@@ -1,4 +1,4 @@
-attributes :id, :confirmation_id, :name, :party, :created_at, :updated_at
+attributes :id, :confirmation_id, :name, :number, :party, :created_at, :updated_at
 
 node do |reservation|
 	{

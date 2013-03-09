@@ -2,8 +2,12 @@
 	
 	List.Controller = 
 		
-		listReservations: (reservations) ->			
+		listReservations: (reservations) ->
 			listView = @getListView reservations
+			
+			listView.on "itemview:has:been:confirmed", (iv, pending) ->
+				reservations.remove pending
+				# App.vent.trigger "pending:confirmed", pending
 			
 			App.listReservationsRegion.show listView
 		

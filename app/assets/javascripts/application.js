@@ -18,7 +18,8 @@
 //= require jquery.ui.effect-highlight
 //= require jquery.ui.datepicker
 //= require jquery.ui.dialog
-//= require jquery.ui.sortable
+//= require jquery.ui.draggable
+//= require jquery.ui.droppable
 //= require js-routes
 //= require twitter/bootstrap/modal
 //= require_tree ./backbone/config

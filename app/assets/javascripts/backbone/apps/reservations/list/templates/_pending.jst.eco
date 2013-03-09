@@ -1,4 +1,4 @@
-<div class="four columns">
+<div class="four columns pending-item">
 	<div class="pending-slot">
 		<div class="number-in-party"><%= @party %></div>
 		<div class="contact">
