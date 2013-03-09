@@ -1,14 +1,10 @@
-<div class="six columns centered">
-	<div class="form-wrapper">
-		<h3>Enter a Reservation</h3>
-		<form>
-			<input type="text" name="name" placeholder="Name" />
-			<input type="tel" name="phone" placeholder="Phone Number" />
-			<input type="text" name="number" placeholder="Number in Party" />
-			<button type="submit" class="button radius medium eight columns offset-by-four">Add Reservation</button>
-		</form>
-	</div>	
-</div>	
+<div id="new-reservation-region"></div>
+
+<%= javascript_tag do %>
+	$(function(){
+		Bistro.start();	
+	});
+<% end %>
 
 <!-- 	############## Pending Reservations ##############  -->
 <div id="pending-reservations" class="row">

@@ -20,4 +20,6 @@
 //= require jquery.ui.sortable
 //= require js-routes
 //= require twitter/bootstrap/modal
+//= require_tree ./backbone/config
 //= require backbone/app
+//= require_tree ./backbone/apps
