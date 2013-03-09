@@ -11,6 +11,12 @@
 			reservations = new Entities.ReservationsCollection
 			reservations.fetch()
 			reservations
+		
+		newReservations: (reservations) ->
+			new reservations.model
 	
 	App.reqres.addHandler "reservation:entities", ->
 		API.getReservations()
+	
+	App.reqres.addHandler "new:reservation", (reservations) ->
+		API.newReservations reservations

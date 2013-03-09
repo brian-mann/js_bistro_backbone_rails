@@ -3,9 +3,12 @@
 	New.Controller = 
 		
 		newReservation: ->
-			newView = @getNewView()
+			reservations = App.request "reservations"
+			reservation = App.request "new:reservation", reservations
+			newView = @getNewView reservation
 			
 			App.newReservationRegion.show newView
 		
-		getNewView: ->
+		getNewView: (reservation) ->
 			new New.Reservation
+				model: reservation
