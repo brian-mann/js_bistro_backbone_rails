@@ -2,10 +2,8 @@
 	
 	New.Controller = 
 		
-		newReservation: ->
-			reservations = App.request "reservations"
+		newReservation: (reservations) ->
 			reservation = App.request "new:reservation", reservations
-			reservation.on "created", => @newReservation()
 				
 			newView = @getNewView reservation, reservations
 			

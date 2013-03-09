@@ -2,8 +2,16 @@
 	@startWithParent = false
 	
 	API =
-		newReservation: ->
-			ReservationsApp.New.Controller.newReservation()
+		newReservation: (reservations) ->
+			ReservationsApp.New.Controller.newReservation reservations
+		
+		listReservations: (reservations) ->
+			ReservationsApp.List.Controller.listReservations reservations
 	
 	ReservationsApp.on "start", ->
-		API.newReservation()
+		reservations = App.request "reservations"
+		reservations.on "add", ->
+			API.newReservation reservations
+		
+		API.newReservation reservations
+		API.listReservations reservations
