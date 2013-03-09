@@ -9,7 +9,8 @@
 		App.reservations
 	
 	App.addRegions
-		newReservationRegion: "#new-reservation-region"
+		newReservationRegion: 	"#new-reservation-region"
+		listReservationsRegion: "#list-reservations-region"
 		
 	App.addInitializer ->
 		App.module("ReservationsApp").start()
