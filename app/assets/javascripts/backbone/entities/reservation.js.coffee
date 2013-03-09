@@ -1,7 +1,7 @@
 @Bistro.module "Entities", (Entities, App, Backbone, Marionette, $, _) ->
 	
 	class Entities.Reservation extends Entities.Model
-		url: -> Routes.reservations_path()
+		urlRoot: -> Routes.reservations_path()
 
 	class Entities.ReservationsCollection extends Entities.Collection
 		model: Entities.Reservation
@@ -15,11 +15,18 @@
 			reservations.fetch()
 			reservations
 		
-		newReservations: (reservations) ->
-			new reservations.model
+		newReservation: (reservations) ->
+			new Entities.Reservation
+		
+		getPendingReservations: (reservations) ->
+			pending = reservations.where confirmation_id: null
+			new Entities.ReservationsCollection pending
 	
 	App.reqres.addHandler "reservation:entities", ->
 		API.getReservations()
 	
 	App.reqres.addHandler "new:reservation", (reservations) ->
-		API.newReservations reservations
+		API.newReservation reservations
+	
+	App.reqres.addHandler "pending:reservations", (reservations) ->
+		API.getPendingReservations reservations
