@@ -6,10 +6,5 @@
 		ui:
 			form: "form"
 		
-		events:
-			"submit form" : "formSubmitted"
-		
-		formSubmitted: (e) ->
-			e.preventDefault()
-			data = Backbone.Syphon.serialize @
-			console.log data
+		triggers:
+			"submit form" : "form:submitted"
