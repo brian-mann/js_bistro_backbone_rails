@@ -1,0 +1,36 @@
+<div class="four columns">
+	<div class="pending-slot">
+		<div class="number-in-party"><%= @party %></div>
+		<div class="contact">
+			<div class="name-in-party"><%= @name %></div>
+			<div class="phone-number"><%= @number %></div>
+		</div>
+	</div>	
+</div>
+<!-- <div class="four columns">
+	<div class="pending-slot selected"> <!-- Class "selected" indicates selected state -->
+		<!-- <div class="number-in-party">2</div>
+		<div class="contact">
+			<div class="name-in-party">Selina Kyle</div>
+			<div class="phone-number">706-555-4891</div>
+		</div>
+	</div>
+</div>
+<div class="four columns">
+	<div class="pending-slot">
+		<div class="number-in-party">4</div>
+		<div class="contact">
+			<div class="name-in-party">Matt Hagen</div>
+			<div class="phone-number">678-555-5001</div>
+		</div>
+	</div>
+</div>
+<div class="four columns">
+	<div class="pending-slot">
+		<div class="number-in-party">1</div>
+		<div class="contact">
+			<div class="name-in-party">Temple Fugate</div>
+			<div class="phone-number">404-555-6153</div>
+		</div>
+	</div>
+</div> -->

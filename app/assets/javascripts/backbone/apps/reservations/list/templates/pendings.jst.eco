@@ -1,0 +1,4 @@
+<div id="pending-reservations" class="row">
+	<h2>Pending Reservations</h2>	
+	<div id="pending-reservations-list"></div>
+</div>
