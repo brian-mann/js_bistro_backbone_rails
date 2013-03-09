@@ -5,11 +5,13 @@
 		newReservation: ->
 			reservations = App.request "reservations"
 			reservation = App.request "new:reservation", reservations
-			newView = @getNewView reservation
+			reservation.on "created", => @newReservation()
+				
+			newView = @getNewView reservation, reservations
 			
 			newView.on "form:submitted", ->
 				data = Backbone.Syphon.serialize newView
-				reservation.processForm data
+				reservation.processForm data, reservations
 			
 			App.newReservationRegion.show newView
 		

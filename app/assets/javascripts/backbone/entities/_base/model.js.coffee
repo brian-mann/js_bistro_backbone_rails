@@ -2,8 +2,12 @@
 	
 	class Entities.Model extends Backbone.Model
 		
-		processForm: (data) ->
-			
+		processForm: (data, collection = false) ->
+			isNew = @isNew()
 			@save data,
-				success: ->
-					console.log "this saved", data
+				success: =>
+					if isNew
+						collection.add @
+						@trigger "created"
+					else
+						@trigger "saved"

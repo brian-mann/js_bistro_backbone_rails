@@ -3,7 +3,7 @@
 	class Entities.Reservation extends Entities.Model
 		url: -> Routes.reservations_path()
 
-	class Entities.ReservationsCollection extends Entities.Model
+	class Entities.ReservationsCollection extends Entities.Collection
 		model: Entities.Reservation
 		url: -> Routes.reservations_path()
 	
