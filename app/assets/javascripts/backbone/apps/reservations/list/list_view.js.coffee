@@ -20,16 +20,17 @@
 	
 	class List.Pendings extends Marionette.CompositeView
 		template: "reservations/list/templates/pendings"
+		# id: "pending-reservations-list"
 		itemView: List.Pending
 		emptyView: List.Empty
 		itemViewContainer: "#pending-reservations-list"
 		
-		ui:
-			items: "#pending-reservations-list"
-			item: ".pending-item"
+		# ui:
+		# 	items: "#pending-reservations-list"
+		# 	item: ".pending-item"
 		
 		appendHtml: (cv, iv, index) ->
-			childrenContainer = cv.$(cv.itemViewContainer || cv.el)
+			childrenContainer = if cv.itemViewContainer then cv.$(cv.itemViewContainer) else cv.$el
 			children 					= childrenContainer.children()
 			if children.size() <= index
 				childrenContainer.append(iv.el)
